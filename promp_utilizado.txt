@@ -1,0 +1,222 @@
+Hola, necesito que generes un proyecto completo en C# (.NET 6 o superior) como aplicación de consola llamado “Sistema Integral de Gestión de Biblioteca Universitaria”.
+
+El sistema debe verse como un proyecto académico universitario desarrollado en un curso de Programación de Algoritmos, por lo que el código debe ser sencillo, claro, funcional y fácil de explicar. No debe usar programación avanzada ni interfaces gráficas.
+
+
+REQUISITOS GENERALES
+
+
+El sistema debe funcionar completamente en consola y utilizar obligatoriamente:
+
+- estructuras secuenciales
+- if-else
+- switch-case
+- for
+- while
+- do-while
+- arreglos
+- matrices
+- cadenas
+- structs
+- archivos .txt y .csv
+- validaciones
+- try-catch
+
+No usar:
+- listas dinámicas
+- bases de datos
+- interfaces gráficas
+- programación avanzada
+- librerías innecesarias
+
+
+FUNCIONAMIENTO GENERAL
+
+
+El sistema debe administrar:
+
+1. Libros
+2. Usuarios
+3. Préstamos
+4. Reportes
+
+Debe existir un menú principal y submenús usando switch-case.
+
+
+STRUCTS OBLIGATORIOS
+
+
+Crear los siguientes structs:
+
+STRUCT LIBRO
+- codigo
+- titulo
+- autor
+- editorial
+- anio
+- categoria
+- cantidad
+
+STRUCT USUARIO
+- carne
+- nombre
+- carrera
+- correo
+- telefono
+- estado
+
+STRUCT PRESTAMO
+- carneUsuario
+- codigoLibro
+- fechaPrestamo
+- fechaDevolucion
+- estado
+
+
+ARREGLOS
+
+
+Usar arreglos de structs con límites fijos:
+
+- Libro[] libros = new Libro[10]
+- Usuario[] usuarios = new Usuario[5]
+- Prestamo[] prestamos = new Prestamo[10]
+
+
+MENU PRINCIPAL
+
+
+Mostrar:
+
+1. Gestión de Libros
+2. Gestión de Usuarios
+3. Gestión de Prestamos
+4. Reportes
+5. Salir
+
+
+MODULO LIBROS
+
+
+Debe permitir:
+
+- Registrar libro
+- Buscar libro
+- Mostrar libros
+- Eliminar libro
+
+VALIDACIONES:
+- código de 8 caracteres
+- código iniciado con “LIB”
+- año entre 1900 y año actual
+- cantidad no negativa
+- evitar campos vacíos
+
+
+MODULO USUARIOS
+
+Debe permitir:
+
+- Registrar usuario
+- Buscar usuario
+- Mostrar usuarios
+
+VALIDACIONES:
+- carnet de 8 dígitos
+- correo con @ y .
+- campos obligatorios
+- teléfono obligatorio
+
+
+MODULO PRESTAMOS
+
+
+Debe permitir:
+
+- Registrar préstamo
+- Registrar devolución
+- Mostrar préstamos
+
+REGLAS:
+- validar disponibilidad del libro
+- disminuir inventario al prestar
+- aumentar inventario al devolver
+- fechas en formato dd/mm/yyyy
+
+
+REPORTES
+
+
+Crear reportes mostrando:
+
+- total de libros
+- total de usuarios
+- total de préstamos
+
+Además:
+- exportar reporte a archivo .txt
+
+
+MATRIZ
+
+
+Usar una matriz bidimensional para almacenar estadísticas del sistema.
+
+Ejemplo:
+int[,] matrizReportes = new int[3,3];
+
+
+ARCHIVOS
+
+
+Crear carpeta Data y utilizar:
+
+- libros.csv
+- usuarios.txt
+- prestamos.txt
+
+Implementar:
+- guardar datos
+- cargar datos
+- persistencia automática
+
+
+VALIDACIONES
+
+Usar:
+- string.IsNullOrWhiteSpace
+- int.TryParse
+- long.TryParse
+- validaciones de fechas
+- validaciones de longitud
+
+
+ESTILO DEL CODIGO
+
+
+El código debe:
+- usar métodos separados
+- tener nombres simples y descriptivos
+- estar comentado
+- ser fácil de leer
+- tener lógica sencilla
+- verse como proyecto académico real
+
+REQUISITOS IMPORTANTES
+
+Asegúrate de usar realmente:
+- for
+- while
+- do-while
+- switch-case
+- arreglos
+- matrices
+- strings
+- archivos
+- structs
+
+Todo debe ser funcional.
+
+RESULTADO FINAL
+
+Genera todo el código completo en un solo archivo .cs completamente funcional y listo para ejecutar.
