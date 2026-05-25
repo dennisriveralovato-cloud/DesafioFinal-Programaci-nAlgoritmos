@@ -30,6 +30,9 @@ El sistema incluye:
 - Reportes generales
 - Persistencia de datos mediante archivos
 
+  # Instrucciones para clonar y ejecutar el proyecto
+Para ejecutar correctamente el sistema, primero es necesario clonar el repositorio desde GitHub utilizando el comando "git clone" junto con el enlace correspondiente del proyecto. Posteriormente, se debe abrir la carpeta del proyecto en Visual Studio 2022 y ejecutar el archivo principal del sistema. El programa creará automáticamente la carpeta "Data" en caso de no existir, permitiendo almacenar la información de libros, usuarios y préstamos mediante archivos ".csv" y ".txt". Finalmente, el sistema puede ejecutarse presionando "Ctrl + F5" o seleccionando la opción “Iniciar sin depuración”, mostrando así el menú principal de la biblioteca en consola. 
+
 # Tecnologías Utilizadas
 
 - Lenguaje: C#
@@ -59,27 +62,29 @@ El proyecto implementa las siguientes estructuras vistas durante el ciclo:
 
 ## Libro
 Contiene:
-- código
-- título
-- autor
-- editorial
-- año
-- categoría
-- cantidad disponible
+- Código
+- Título
+- Autor
+- Editorial
+- Año
+- Categoría
+- Cantidad disponible
 
 ## Usuario
 Contiene:
-- carné
-- nombre
-- carrera
-- correo
-- teléfono
-- estado
+- Carné
+- Nombre
+- Carrera
+- Correo
+- Teléfono
+- Estado
 
 ## Prestamo
 Contiene:
-- carné de usuario
-- código de libro
-- fecha de préstamo
-- fecha de devolución
-- estado
+- Carné de usuario
+- Código de libro
+- Fecha de préstamo
+- Fecha de devolución
+- Estado
+
+# Enlace directo al video demostrativo
